@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -31,7 +32,9 @@ export default function HeroSection() {
           transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 0.4 }}
           className="mt-8 px-8 py-3 bg-white text-gray-900 text-lg font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300"
         >
-          View Collections
+          <Link href="/collections">
+            View Collections/Work
+          </Link>
         </motion.button>
       </div>
     </section>
