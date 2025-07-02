@@ -19,8 +19,36 @@
   }
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add custom global styles here */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Ensure Inter font is imported or available */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar for a smoother look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
